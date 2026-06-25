@@ -1,7 +1,6 @@
 # Behaviour Tree Editor
 
-A visual editor extension for creating and managing Behaviour Trees used by the **Turn Based Strategy Framework** in Unity.  
-This package is **not a standalone system** — it enhances the Turn Based Strategy Framework by providing a visual workflow for authoring AI logic.
+A visual editor extension for creating and managing Behaviour Trees used by the **Turn Based Strategy Framework** in Unity.  This package is **not a standalone system** — it enhances the Turn Based Strategy Framework by providing a visual workflow for authoring AI logic.
 
 ## Requirements
 
@@ -33,9 +32,7 @@ For creating your own trees and profiles, see the sections below.
 ## Creating Behaviour Tree Graphs
 
 A Behaviour Tree defines decision-making logic as a hierarchy of nodes that control how an AI agent acts.  
-Understanding how Behaviour Trees work conceptually is beyond the scope of this README — basic familiarity is assumed.  
-The Turn Based Strategy Framework includes an implementation of Behaviour Tree–based AI, but by default these trees must be authored in code.  
-This editor provides a visual alternative.
+Understanding how Behaviour Trees work conceptually is beyond the scope of this README — basic familiarity is assumed. The Turn Based Strategy Framework includes an implementation of Behaviour Tree–based AI, but by default these trees must be authored in code. This editor provides a visual alternative.
 
 ### Basic Concepts
 
@@ -44,15 +41,12 @@ This editor provides a visual alternative.
 - **Behaviour Tree Profile** – A ScriptableObject that instantiates a specific Behaviour Tree Graph and provides parameterization for runtime use.  
   Create via: `Create → Turn Based Strategy Framework → Behaviour Tree Profile`
 - **Behaviour Tree Profile Adapter** – A component that attaches a Behaviour Tree Profile to a unit.
-- **Nodes** – The functional elements of the tree.  
-  The project includes implementations of all standard node types provided by the Turn Based Strategy Framework.
+- **Nodes** – The functional elements of the tree.
+The project includes implementations of all standard node types provided by the Turn Based Strategy Framework.
 
 ### Building the Graph
 
-The editor interface is powered by the Graph Toolkit.  
-You can create and connect nodes, define variables on the blackboard, and arrange the graph visually.  
-For detailed guidance on Graph Toolkit usage, see the official documentation:  
-[Graph Toolkit Manual](https://docs.unity3d.com/Packages/com.unity.graphtoolkit@0.4/manual/introduction.html)
+The editor interface is powered by the Graph Toolkit. You can create and connect nodes, define variables on the blackboard, and arrange the graph visually. For detailed guidance on Graph Toolkit usage, see the official documentation: [Graph Toolkit Manual](https://docs.unity3d.com/Packages/com.unity.graphtoolkit@0.4/manual/introduction.html)
 
 1. Create a new graph via `Create → Turn Based Strategy Framework → Behaviour Tree Graph`.  
    Double-click the new asset to open it for editing.
@@ -62,8 +56,7 @@ For detailed guidance on Graph Toolkit usage, see the official documentation:
 
 ### Creating Behaviour Tree Profiles
 
-A graph acts as a template. Profiles create specific instances of that graph with adjustable parameters.  
-For example, you can derive multiple unit AIs—aggressive, defensive, cautious—by changing the profile’s variable values.
+A graph acts as a template. Profiles create specific instances of that graph with adjustable parameters. For example, you can derive multiple unit AIs—aggressive, defensive, cautious—by changing the profile’s variable values.
 
 1. Create a new profile via `Create → Turn Based Strategy Framework → Behaviour Tree Profile`.  
 2. Assign the desired Behaviour Tree Graph to the **Template** field.  
