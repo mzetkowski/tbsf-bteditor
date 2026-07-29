@@ -50,9 +50,13 @@ The editor interface is powered by the Graph Toolkit. You can create and connect
 
 1. Create a new graph via `Create → Turn Based Strategy Framework → Behaviour Tree Graph`.  
    Double-click the new asset to open it for editing.
-2. Add and connect nodes to define behaviour logic.
+2. Define Required Context Variables (Blackboard)  
+   At runtime, the Framework automatically injects the active unit and grid context into your tree. For nodes in your graph to access these references, you **must declare the following variables in the Graph Blackboard**:
+   * `unitReference` (Type: `Unit`) – References the unit executing this tree.
+   * `gridController` (Type: `UnityGridController`) – References the current grid controller.
+3. Add and connect nodes to define behaviour logic.
    > **⚠️Important**: Each graph must start with a `RootGraphNode`.
-3. Save the graph.
+4. Save the graph.
 
 ### Creating Behaviour Tree Profiles
 
