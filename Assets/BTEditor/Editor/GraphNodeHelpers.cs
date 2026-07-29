@@ -12,14 +12,14 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor
             var variableValue = new RuntimeValueReference<T>();
             var port = node.GetInputPortByName(portName);
 
-            if (port.isConnected)
+            if (port.IsConnected)
             {
-                var connectedPort = port.firstConnectedPort;
+                var connectedPort = port.FirstConnectedPort;
                 switch (connectedPort.GetNode())
                 {
                     case IVariableNode variableNode:
                         variableValue.PassedByVariable = true;
-                        variableValue.VariableName = variableNode.variable.name;
+                        variableValue.VariableName = variableNode.Variable.Name;
                         break;
                     case IConstantNode constantNode:
                         constantNode.TryGetValue<T>(out var constantValue);
@@ -39,9 +39,9 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor
         public static RuntimeGraphNode GetChildNodeFromOutput(BehaviourTreeGraphNode node, string portName)
         {
             var outputPort = node.GetOutputPortByName(portName);
-            if (!outputPort.isConnected) return null;
+            if (!outputPort.IsConnected) return null;
 
-            return (outputPort.firstConnectedPort.GetNode() as BehaviourTreeGraphNode)?.ToRuntimeGraphNode();
+            return (outputPort.FirstConnectedPort.GetNode() as BehaviourTreeGraphNode)?.ToRuntimeGraphNode();
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime.Nodes;
 using Unity.GraphToolkit.Editor;
@@ -7,6 +8,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor.Nodes
     /// <summary>
     /// Editor graph node representing a sequence node within the behavior tree editor.
     /// </summary>
+    [Serializable]
     public class SequenceGraphNode : BehaviourTreeGraphNode
     {
         public override RuntimeGraphNode ToRuntimeGraphNode()

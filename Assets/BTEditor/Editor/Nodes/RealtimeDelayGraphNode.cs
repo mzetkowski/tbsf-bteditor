@@ -1,3 +1,4 @@
+using System;
 using TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime.Nodes;
 using Unity.GraphToolkit.Editor;
 
@@ -6,6 +7,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor.Nodes
     /// <summary>
     /// Editor graph node representing a realtime delay node within the behavior tree editor.
     /// </summary>
+    [Serializable]
     public class RealtimeDelayGraphNode : BehaviourTreeGraphNode
     {
         public override RuntimeGraphNode ToRuntimeGraphNode()

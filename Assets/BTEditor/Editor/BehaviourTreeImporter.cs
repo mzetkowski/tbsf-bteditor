@@ -11,7 +11,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor
     /// Imports a BehaviourTreeGraph asset (.btg) and generates a corresponding runtime asset.
     /// Converts editor nodes into a runtime BehaviourTreeRuntimeGraph and serializes its variables.
     /// </summary>
-    [ScriptedImporter(1, BehaviourTreeGraph.AssetExtension)]
+    [ScriptedImporter(2, BehaviourTreeGraph.AssetExtension)]
     class BehaviourTreeImporter : ScriptedImporter
     {
         public override void OnImportAsset(AssetImportContext ctx)
@@ -31,7 +31,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor
             var runtimeAsset = ScriptableObject.CreateInstance<BehaviourTreeRuntimeGraph>();
 
             runtimeAsset.RootGraphNode = startNodeModel.ToRuntimeGraphNode();
-            runtimeAsset.Variables = graph.GetVariables().Select(v => new GraphVariable(v.name, v.dataType.AssemblyQualifiedName)).ToList();
+            runtimeAsset.Variables = graph.GetVariables().Select(v => new GraphVariable(v.Name, v.DataType.AssemblyQualifiedName)).ToList();
             ctx.AddObjectToAsset("RuntimeAsset", runtimeAsset);
             ctx.SetMainObject(runtimeAsset);
         }

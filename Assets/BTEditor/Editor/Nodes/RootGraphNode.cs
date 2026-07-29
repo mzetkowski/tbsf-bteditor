@@ -14,9 +14,9 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor.Nodes
         {
             RuntimeGraphNode childNode = null;
             var outputPort = GetOutputPort(0);
-            if (outputPort.isConnected)
+            if (outputPort.IsConnected)
             {
-                childNode = (outputPort.firstConnectedPort.GetNode() as BehaviourTreeGraphNode).ToRuntimeGraphNode();
+                childNode = (outputPort.FirstConnectedPort.GetNode() as BehaviourTreeGraphNode).ToRuntimeGraphNode();
             }
 
             return new RuntimeRootGraphNode(childNode);

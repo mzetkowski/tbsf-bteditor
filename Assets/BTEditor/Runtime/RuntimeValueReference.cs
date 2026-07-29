@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime
@@ -7,6 +8,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime
     /// parameters dictionary (VariableName). Runtime nodes use this to obtain the actual input value by checking PassedByVariable
     /// and resolving from parameters when true, or using the stored Value when false.
     /// </summary>
+    [Serializable]
     public class RuntimeValueReference<T>
     {
         [field: SerializeField] public T Value { get; set; }

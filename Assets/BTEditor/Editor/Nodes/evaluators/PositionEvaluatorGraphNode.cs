@@ -1,12 +1,14 @@
 using TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime.Nodes;
 using TurnBasedStrategyFramework.Common.AI.Evaluators;
 using Unity.GraphToolkit.Editor;
+using System;
 
 namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor.Nodes
 {
     /// <summary>
     /// Editor graph node representing a <see cref="IPositionEvaluator"/>.
     /// </summary>
+    [Serializable]
     public abstract class PositionEvaluatorGraphNode : Node
     {
         public abstract RuntimePositionEvaluatorGraphNode ToRuntimeGraphNode();

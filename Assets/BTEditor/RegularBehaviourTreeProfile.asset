@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea824ec85445bce49a9d0887fb3cea50, type: 3}
   m_Name: RegularBehaviourTreeProfile
   m_EditorClassIdentifier: com.crookedhead.tbsf.bteditor.runtime::TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime.BehaviourTreeProfile
-  _template: {fileID: 2841676755933307327, guid: f6095ea9d38ceba4bb148d891b9cb4ce, type: 3}
+  _template: {fileID: 2841676755933307327, guid: 12735e6a799396c47974efb66ef62a05, type: 3}
   variableValues:
   - VariableName: 
     IntValue: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
     EnumIntValue: 0
   - VariableName: actionDelay
     IntValue: 0
-    FloatValue: 100
+    FloatValue: 3000
     BoolValue: 0
     StringValue: 
     UnityObjectValue: {fileID: 0}
@@ -164,6 +164,13 @@ MonoBehaviour:
   - VariableName: damageDealtTargetEvaluatorWeight
     IntValue: 0
     FloatValue: 1
+    BoolValue: 0
+    StringValue: 
+    UnityObjectValue: {fileID: 0}
+    EnumIntValue: 0
+  - VariableName: highHelathThreshold
+    IntValue: 0
+    FloatValue: 0
     BoolValue: 0
     StringValue: 
     UnityObjectValue: {fileID: 0}

@@ -1,3 +1,4 @@
+using System;
 using TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime.Nodes;
 using TurnBasedStrategyFramework.Unity.Units;
 using Unity.GraphToolkit.Editor;
@@ -7,6 +8,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor.Nodes
     /// <summary>
     /// Editor graph node representing a health threshold node within the behavior tree editor.
     /// </summary>
+    [Serializable]
     public class HealthThresholdGraphNode : BehaviourTreeGraphNode
     {
         public override RuntimeGraphNode ToRuntimeGraphNode()

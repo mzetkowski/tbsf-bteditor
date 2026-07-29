@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Runtime.Nodes;
 using TurnBasedStrategyFramework.Unity.Controllers;
@@ -9,6 +10,7 @@ namespace TurnBasedStrategyFramework.Unity.BehaviourTreeEditor.Editor.Nodes
     /// <summary>
     /// Editor graph node representing move action node within the behavior tree editor.
     /// </summary>
+    [Serializable]
     public class MoveActionGraphNode : BehaviourTreeGraphNode
     {
         public override RuntimeGraphNode ToRuntimeGraphNode()
