@@ -1,0 +1,1 @@
+You can find up-to-date readme at https://github.com/mzetkowski/tbsf-bteditor

@@ -101,8 +101,6 @@ InitTestScene*.unity*
 /Assets/TBSFramework/*
 /Assets/Settings/*
 /Assets/TextMesh Pro/*
-/Assets/BTEditor/README.md
-/Assets/BTEditor/README.md.meta
 /ProjectSettings/*
 /.vsconfig
 /Assets/TBSFramework.meta
