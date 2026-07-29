@@ -97,3 +97,16 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+/Assets/TBSFramework/*
+/Assets/Settings/*
+/Assets/TextMesh Pro/*
+/Assets/BTEditor/README.md
+/Assets/BTEditor/README.md.meta
+/ProjectSettings/*
+/.vsconfig
+/Assets/TBSFramework.meta
+/Assets/Settings.meta
+/Assets/TextMesh Pro.meta
+/Packages/manifest.json
+/Packages/packages-lock.json
