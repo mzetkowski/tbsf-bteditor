@@ -4,14 +4,24 @@ A visual editor extension for creating and managing Behaviour Trees used by the 
 
 ## Requirements
 
-* Unity >= 6.2  
-* Turn Based Strategy Framework >= 4.0.2  
-* Graph Toolkit == 0.4.0-exp.2  
+* Turn Based Strategy Framework: `>= 4.0.2`
+* Unity:
+  * **v2.x.x:** `>= 6.4`
+  * **v1.x.x:** `6.2 – 6.3`
+* Graph Toolkit:
+  * **v2.x.x:** Included natively in Unity 6.4+
+  * **v1.x.x:** `0.4.0-exp.2`
 
 ## Installation
 
-1. Install the Graph Toolkit, as described here: [Graph Toolkit Installation Guide](https://docs.unity3d.com/Packages/com.unity.graphtoolkit@0.4/manual/installation.html)
-2. Download and import the latest release package from this repository.
+> **Note:** It is assumed that **Turn Based Strategy Framework** (v4.0.2 or higher) is already installed in your Unity project before proceeding.
+
+### For Unity 6.4+
+Graph Toolkit is built directly into Unity 6.4+. Simply download and import the latest `v2.x.x` release package from this repository into your project.
+
+### For Unity 6.2 – 6.3
+1. Install Graph Toolkit `0.4.0-exp.2` via Package Manager as described in the [Graph Toolkit 0.4 Guide](https://docs.unity3d.com/Packages/com.unity.graphtoolkit@0.4/manual/installation.html).
+2. Download and import the latest `v1.x.x` release package into your project.
 
 ## Getting Started
 
